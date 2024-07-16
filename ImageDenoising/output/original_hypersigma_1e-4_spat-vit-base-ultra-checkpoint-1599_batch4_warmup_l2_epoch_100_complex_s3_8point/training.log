@@ -1,0 +1,12 @@
+Namespace(prefix='hypersigma_gaussian', arch='hypersigma', batchSize=4, lr=0.0001, wd=0, loss='l2', testdir=None, sigma=None, training_dataset_path='./dataset/WDC/training/wdc.db', pretrain='/mnt/code/users/yuchunmiao/hypersigma-master/pre_train/checkpoint-400.pth', init='kn', no_cuda=False, from_scratch=False, pretrain_path='./pre_train/spat-vit-base-ultra-checkpoint-1599.pth', no_log=False, threads=1, seed=2018, resume=False, no_ropt=False, chop=False, resumePath=None, dataroot='/data/HSI_Data/ICVL64_31.db', clip=1000000.0, gpu_ids=[0], basedir='./output/original_hypersigma_1e-4_spat-vit-base-ultra-checkpoint-1599_batch4_warmup_l2_epoch_100_complex_s3_8point', epoch=100, update_lr=5e-05, meta_lr=5e-05, n_way=1, k_spt=2, k_qry=5, task_num=16, update_step=5, update_step_test=10)
+Cuda Acess: 1
+=> creating model 'hypersigma'
+load our vit fusion_new_v5 final models
+Traceback (most recent call last):
+  File "/data/jwjang/project/hsi_foundation/HyperSIGMA/ImageDenoising/hsi_denoising_complex_wdc.py", line 23, in <module>
+    engine = Engine(opt)
+  File "/data/jwjang/project/hsi_foundation/HyperSIGMA/ImageDenoising/hsi_setup.py", line 146, in __init__
+    self.__setup()
+  File "/data/jwjang/project/hsi_foundation/HyperSIGMA/ImageDenoising/hsi_setup.py", line 173, in __setup
+    self.net = hypersigma(args=self.opt)
+TypeError: spat_vit_b_rvsa() got an unexpected keyword argument 'args'
